@@ -1,0 +1,174 @@
+
+<!-- Taken from url=http://www.cs.cmu.edu/~dfouhey/3DP/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="StyleSheet" href="assets/style.css" type="text/css" media="all">
+
+<title>Physical Reasoning Using Dynamics-Aware Models</title>
+<script type="text/javascript" async="" src="assets/ga.js"></script><script type="text/javascript">
+</script>
+
+<!-- bibliographic tags -->
+<meta name="citation_title" content="Physical Reasoning Using Dynamics-Aware Models"/>
+<meta name="citation_author" content="Ahmed, Eltayeb"/>
+<meta name="citation_author" content="Bakhtin, Anton"/>
+<meta name="citation_author" content="van der Maaten, Laurens"/>
+<meta name="citation_author" content="Girdhar, Rohit"/>
+<meta name="citation_publication_date" content="2021"/>
+<meta name="citation_journal_title" content="ICML Workshop"/>
+<meta name="citation_pdf_url" content=""/>
+
+<style type="text/css">
+#primarycontent h1 {
+	font-variant: small-caps;
+}
+#primarycontent h3 {
+}
+#primarycontent teasertext {
+	text-align: center;
+}
+#primarycontent p {
+	text-align: center;
+}
+#primarycontent {
+	text-align: justify;
+}
+#primarycontent p {
+	text-align: justify;
+}
+#primarycontent p iframe {
+	text-align: center;
+}
+</style>
+<script type="text/javascript">
+  function togglevis(elid){
+    el=document.getElementById(elid);
+    aelid=elid+"a";
+    ael=document.getElementById(aelid);
+    if(el.style.display=='none'){
+      el.style.display='inline-table';
+      ael.innerHTML="[Hide BibTex]";
+    }else{
+      el.style.display='none';
+      ael.innerHTML="[Show BibTex]";
+    }
+  }
+</script>
+
+<link rel="icon" type="image/png" href="http://rohitgirdhar.github.io/favicon.png">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N8F8KPQB48"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N8F8KPQB48');
+</script>
+
+
+</head>
+<body>
+<div id="primarycontent">
+<h1 align="center" itemprop="name"><strong>
+Physical Reasoning Using Dynamics Aware Embeddings
+</strong></h1>
+
+
+   <table class="results" align="center">
+    <tr>
+      <td align="center">
+        <img src="assets/teaser.jpg" style="max-width:100%;">
+      </td>
+    </tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr>
+      <td class="credits" align="justify">
+	A common approach to solving physicalreasoning tasks is to train a value learner on example tasks. A limitation of such an approach
+    is that it requires learning about object dynamics
+    solely from reward values assigned to the final
+    state of a rollout of the environment. This study
+    aims to address this limitation by augmenting the
+    reward value with self-supervised signals about
+    object dynamics. Specifically, we train the model
+    to characterize the similarity of two environment
+    rollouts, jointly with predicting the outcome of the
+    reasoning task. This similarity can be defined as a
+    distance measure between the trajectory of objects
+    in the two rollouts, or learned directly from pixels
+    using a contrastive formulation. Empirically, we
+    find that this approach leads to substantial performance improvements on the PHYRE benchmark
+    for physical reasoning, establishing a new state-of-the-art.
+	</td>
+    </trt>
+ </table>
+
+
+
+<h3>People</h3>
+
+<table id="people" style="margin:auto;">
+  <tr>
+    <td>
+      <img src="assets/authors/eltayeb.jpg"/><br/>
+      Eltayeb Ahmed
+    </td>
+    <td>
+      <img src="assets/authors/anton.jpg"/><br/>
+      Anton Bakhtin
+    </td>
+
+    <td>
+      <img src="assets/authors/laurens.jpg"/><br/>
+      <a href="https://lvdmaaten.github.io/">Laurens van der Maaten</a>
+    </td>
+    <td>
+      <img src="assets/authors/rohit.jpg"/><br/>
+      <a href="https://rohitgirdhar.github.io/">Rohit Girdhar</a>
+    </td>
+
+  </tr>
+</table>
+
+
+<h3>Paper</h3>
+<table>
+  <tr></tr>
+  <tr><td>
+    <a href="https://arxiv.org/pdf/2006.10734.pdf"><img style="box-shadow: 5px 5px 2px #888888; margin: 10px" src="assets/paper-screenshot.jpg" width="150px"/></a>
+  </td>
+  <td></td>
+  <td>
+    E. Ahmed, A. Bakhtin, L. van der Maaten and R. Girdhar <br/>
+    Physical Reasoning Using Dynamics-Aware Models <br/>
+    Self-Supervised Learning for Reasoning and Perception Workshop, ICML 2021 <br/>
+    [<a href="arxiv/">arXiv</a>] [<a href="http://github.com/facebookresearch/DynamicsAware/">code</a>]
+    [<a href="javascript:togglevis('ahmed21')" id="bibtex">BibTex</a>]
+</table>
+
+
+
+<table class="bibtex" style="display:none" id="ahmed21"><tr><td>
+<pre>
+@article{ahmed2021physical,
+  title={Physical Reasoning Using Dynamics-Aware Models},
+  author={Ahmed, Eltayeb and Bakhtin, Anton and van der Maaten, Laurens and Girdhar, Rohit},
+  booktitle={ICML Workshop},
+  year={2021}
+}
+
+</pre>
+</td></tr></table>
+
+<h3>Acknowledgements</h3>
+<p>
+The authors thank Chaitanya Talnikar, Stephane Deny, Brandon Amos, and the entire Facebook AI Research team for many helpful discussions.
+</p>
+
+<h3>Legal</h3>
+[<a href="https://opensource.facebook.com/legal/terms">Terms of Use</a>] [<a href="https://opensource.facebook.com/legal/privacy">Privacy Policy</a>]
+
+</div>
+</body></html>
