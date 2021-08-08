@@ -1,6 +1,4 @@
 
-<p align="center"><img width="70%" src="imgs/phyre_logo.jpg" /></p>
-
 [![GitHub license](https://img.shields.io/badge/license-Apache-blue.svg)](LICENSE)
 
 # Dynamics-Aware Models
