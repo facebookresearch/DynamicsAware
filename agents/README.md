@@ -11,7 +11,7 @@ This can be replaced with any path to a folder (which be created if it does not 
 
 ```(bash)
 cd agents
-python  python run_sweep_file.py  phyre_agents_final/agents/experiments/self_supervised_experiments/11_temperature_table_3e.conf  --base-dir=output_folder -o -l
+python  python run_sweep_file.py  agents/experiments/self_supervised_experiments/11_temperature_table_3e.conf  --base-dir=output_folder -o -l
 ```
 
 The `-o` flag will cause the results of the experiment to be printed to the terminal when the experiment is over.
@@ -26,7 +26,7 @@ finishes
 
 ```(bash)
 cd agents
-python  python run_sweep_file.py  phyre_agents_final/agents/experiments/self_supervised_experiments/11_temperature_table_3e.conf  --base-dir=output_folder -o -d
+python  python run_sweep_file.py  agents/experiments/self_supervised_experiments/11_temperature_table_3e.conf  --base-dir=output_folder -o -d
 ```
 
 
@@ -35,7 +35,7 @@ use the `-v` flag, for example
 
 ```(bash)
 cd agents
-python  python run_sweep_file.py  phyre_agents_final/agents/experiments/self_supervised_experiments/11_temperature_table_3e.conf  --base-dir=output_folder -d -v
+python  python run_sweep_file.py  agents/experiments/self_supervised_experiments/11_temperature_table_3e.conf  --base-dir=output_folder -d -v
 ```
 
 Each experiment file corresponds to table in the paper and the table number is at the end of the file name.
