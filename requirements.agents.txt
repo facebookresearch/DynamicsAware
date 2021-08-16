@@ -1,0 +1,6 @@
+torch
+Pillow==6.2.2
+torchvision
+tqdm==4.38.0
+future
+tensorboard
