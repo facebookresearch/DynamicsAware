@@ -1,0 +1,19 @@
+<head>
+    <meta http-equiv=“Pragma” content=”no-cache”>
+    <meta http-equiv=“Expires” content=”-1″>
+    <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
+</head>
+
+<ul>
+    {% for file in files %}
+    <li><a href="/{{ join(base_path, file) }}">{{ file }}</a></li>
+    {% endfor %}
+
+    {% for image in images %}
+        <div>
+            <h2 align="center">{{image}} </h2>
+            <br>
+            <img src="/{{ join(base_path, image) }}" style="border:3px solid black;align:center"> 
+        </div>
+    {% endfor %}
+</ul>

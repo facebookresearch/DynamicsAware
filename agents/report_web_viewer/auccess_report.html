@@ -1,0 +1,71 @@
+<head>
+<style>
+* {
+  box-sizing: border-box;
+
+}
+
+.column {
+  float: left;
+  width: 25%;
+
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+<meta http-equiv=“Expires” content=”-1″>
+<meta http-equiv=“Pragma” content=”no-cache”>
+<meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
+
+</head>
+
+<h1 style="text-align:center">Model Performace Detailed report</h1>
+<form>
+    <label for="stride"> Stride: </label>
+    <input type="number" id="stide" name="stride" value="1">
+    <label for="template_group"> Group By Template: </label>
+    <input type="checkbox" id="template_group" name="Template Group">
+    <label for="one_per_template"> Template Summary Results </label>
+    <input type="checkbox" id="one_per_template" name="Template Results">
+    <input type="Submit" value="Submit">
+</form>
+{% for i, record in enumerate(records) %}
+    {% if record == "sep" %}
+    <hr>
+    <b> Template {{records[i+1][1]}} : </b> {{records[i + 1][0]}}
+    {% else %}
+    <h3 style="text-align:center">{{record[1] + ":" + record[3]}} </h3>
+    <div style="text-align:center">{{record[0] if template_results else record[2]}}
+    <div class="row">
+        <div class="column">
+            <div style="padding-left:5%">
+                <img src=/{{join(img_dir, record[1] + ":" + record[3]) + ".jpg"}} style="border:3px solid black;height:256px" style="width:100%">
+            </div>
+        </div>
+       {% if actions_to_plot %}
+                
+        <div class="column">
+                <img src=/visualize_policy?task_id={{record[1] + ":" + record[3]}}&action={{actions_to_plot[(record[1],record[3])]}} style="height:256px"> 
+       </div>
+       {% endif %}
+
+        <div class="column"> 
+            <img src=/{{join(gif_dir, record[1] + ":" + record[3] + ".gif")}} style="height:256px"> 
+        </div>
+       
+       {% if actions_to_anim %}
+        <div class="column"> <img src=/get_sim?task_id={{record[1] + ":" + record[3]}}&action={{actions_to_anim[(record[1],record[3])]}} style="height:256px"> </div>
+        {% endif %}
+
+        <div class="column" style="text-align:left;padding-right:10%"> 
+        </div>
+    </div>
+    {% endif %}
+
+{% endfor %}
